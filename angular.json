@@ -18,15 +18,11 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+           "assets": ["src/favicon.ico", "src/assets"],
+        "styles": [
+            "node_modules/font-awesome/css/font-awesome.min.css",
+            "src/styles.css"
+          ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -38,8 +34,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1MB",
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",

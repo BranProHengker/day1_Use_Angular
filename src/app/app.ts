@@ -1,12 +1,26 @@
+// src/app/app.component.ts
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
+import { HeroBanner } from './hero-banner/hero-banner';
+import { Artwork } from './artwork/artwork';
+import { Emot  } from  './emot/emot';
+import { RecentSearch} from './recent-search/recent-search';
+import { CryoSidebar } from './cryo-sidebar/cryo-sidebar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    Header,
+    HeroBanner,
+    Artwork,
+    Emot,  
+    RecentSearch,
+    CryoSidebar,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('day1');
+  title = 'Nakano-Itsuiki';
 }

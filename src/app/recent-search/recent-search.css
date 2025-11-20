@@ -1,0 +1,41 @@
+.recent-search {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 0 1rem;
+}
+
+.recent-search h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.search-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #e9ecef;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-item:hover {
+  background: #dee2e6;
+}
+
+.search-item.active {
+  background: #495057;
+  color: white;
+}
+
+.search-item i {
+  color: #6c757d;
+}
