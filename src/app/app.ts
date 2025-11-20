@@ -5,7 +5,8 @@ import { HeroBanner } from './hero-banner/hero-banner';
 import { Artwork } from './artwork/artwork';
 import { Emot  } from  './emot/emot';
 import { RecentSearch} from './recent-search/recent-search';
-import { CryoSidebar } from './cryo-sidebar/cryo-sidebar';
+import { Favorite } from './favorite/favorite';
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { CryoSidebar } from './cryo-sidebar/cryo-sidebar';
     Artwork,
     Emot,  
     RecentSearch,
-    CryoSidebar,
+    Favorite,
+
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']

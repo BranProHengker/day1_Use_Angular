@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CryoSidebar } from './cryo-sidebar';
+import { Favorite } from './favorite';
 
-describe('CryoSidebar', () => {
-  let component: CryoSidebar;
-  let fixture: ComponentFixture<CryoSidebar>;
+describe('Favorite', () => {
+  let component: Favorite;
+  let fixture: ComponentFixture<Favorite>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CryoSidebar]
+      imports: [Favorite]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CryoSidebar);
+    fixture = TestBed.createComponent(Favorite);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
