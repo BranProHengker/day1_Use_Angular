@@ -2,7 +2,7 @@
   position: relative;
   height: 400px;
   overflow: hidden;
-  background: linear-gradient(to right, #7c96d8, #5a7cbf);
+  background: linear-gradient(to right, #A0B37D, #D65860);
   color: white;
   display: flex;
   align-items: center;
@@ -21,11 +21,20 @@
 .hero-content {
   z-index: 2;
   max-width: 500px;
+  margin-top: auto;
+  margin-bottom: auto; /* Tambahkan ini agar logo bisa ditempatkan relatif terhadap hero-content */
 }
 
 .logo {
-  height: 30px;
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 60px; /* Diperbesar dari 30px → 60px */
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h1 {
